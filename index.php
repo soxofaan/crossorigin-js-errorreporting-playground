@@ -18,7 +18,8 @@ $jsServeDomain = isset($_GET['jsServeDomain']) ? $_GET['jsServeDomain'] : $curre
 $jsServePath = isset($_GET['jsServePath']) ? $_GET['jsServePath'] : $currentPath;
 
 // Url and attributes of external main.js script
-$scriptUrl = $jsServeDomain . $jsServePath . 'main.js.server.php';
+$scriptName = 'main.js.server.php';
+$scriptUrl = $jsServeDomain . $jsServePath . $scriptName;
 if ($withCorsHeader) {
 	$scriptUrl .= '?withCorsHeader=true';
 }
@@ -64,6 +65,7 @@ $scriptAttributes = $withCrossOriginAttribute ? 'crossorigin="anonymous"' : '';
 			Serve JavaScript module from:<br />
 			<input type="text" name="jsServeDomain" value="<?php echo $jsServeDomain; ?>" id="jsServeDomain" size="20" />
 			<input type="text" name="jsServePath" value="<?php echo $jsServePath; ?>" id="jsServePath" size="80" />
+			<code><?php echo $scriptName; ?></code>
 		</div>
 		<div class="formitem">
 			<input type="submit" />
