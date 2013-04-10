@@ -107,12 +107,12 @@ $scriptAttributes = $withCrossOriginAttribute ? 'crossorigin="anonymous"' : '';
 	</script>
 
 	<script>
-		log('info', 'Starting main()');
+		log('info', 'Starting main(), as defined in main.js module.');
 		main();
 	</script>
 
 	<script>
-		log('info', 'Starting do_something_bad_from_inline()');
+		log('info', 'Starting do_something_bad_from_inline(), defined inline.');
 		do_something_bad_from_inline();
 	</script>
 
