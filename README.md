@@ -25,6 +25,12 @@ Set up
 * The "app" will trigger two errors, the first one in a cross origin context (if an alternative host name is used), and a simple "local" one.
 
 
+How it looks
+------------
+
+![Screenshot of the tool in action](https://raw.github.com/soxofaan/crossorigin-js-errorreporting-playground/master/screenshot.png)
+
+
 Related reading
 ---------------
 
