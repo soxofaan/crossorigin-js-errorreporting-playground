@@ -69,6 +69,8 @@ $scriptAttributes = $withCrossOriginAttribute ? 'crossorigin="anonymous"' : '';
 		</div>
 		<div class="formitem">
 			<input type="submit" />
+			|
+			<a href="index.php">Reset settings</a>
 		</div>
 	</form>
 
